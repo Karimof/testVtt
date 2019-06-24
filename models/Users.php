@@ -47,4 +47,9 @@ class Users extends \yii\db\ActiveRecord
             'password' => 'Password',
         ];
     }
+
+    public function getResults(){
+        return $this->hasMany(Result::className(),['user_id' => 'id']);
+    }
+
 }
