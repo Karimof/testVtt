@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\SubjectSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Subjects';
+$this->title = 'Fanlar';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="subject-index">
@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Subject', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Yangi Fan Qo`shish', ['create'], ['class' => 'btn btn-primary']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -26,9 +26,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+           // 'id',
             'name',
-
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

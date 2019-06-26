@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Questions */
 
-$this->title = 'Create Questions';
+$this->title = 'Savol Qo`shish';
 $this->params['breadcrumbs'][] = ['label' => 'Questions', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

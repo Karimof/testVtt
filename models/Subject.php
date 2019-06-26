@@ -41,4 +41,12 @@ class Subject extends \yii\db\ActiveRecord
             'name' => 'Name',
         ];
     }
+
+    public function getQuestions(){
+        return $this->hasMany(Questions::className(),['subject_id' => 'id']);
+    }
+
+    public function getResults(){
+        return $this->hasMany(Result::className(),['subject_id' => 'id']);
+    }
 }

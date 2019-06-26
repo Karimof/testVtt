@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 22 2019 г., 14:34
+-- Время создания: Июн 24 2019 г., 21:52
 -- Версия сервера: 5.6.43
 -- Версия PHP: 7.2.10
 
@@ -39,6 +39,13 @@ CREATE TABLE `questions` (
   `subject_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Дамп данных таблицы `questions`
+--
+
+INSERT INTO `questions` (`id`, `question`, `answerA`, `answerB`, `answerC`, `answerD`, `trueAnswer`, `subject_id`) VALUES
+(5, 'qdsfch', 'vhgvghv', 'hgvhgvhgv', 'hgvhgvhgv', 'hvhgvhvh', 1, 6);
+
 -- --------------------------------------------------------
 
 --
@@ -66,6 +73,16 @@ CREATE TABLE `subject` (
   `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Дамп данных таблицы `subject`
+--
+
+INSERT INTO `subject` (`id`, `name`) VALUES
+(6, 'fizika'),
+(7, 'Matematika'),
+(8, 'informatika'),
+(9, 'biologiya');
+
 -- --------------------------------------------------------
 
 --
@@ -79,6 +96,13 @@ CREATE TABLE `user` (
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `user`
+--
+
+INSERT INTO `user` (`id`, `fio`, `image`, `username`, `password`) VALUES
+(2, 'bobojonov', 'mukhtor', 'pifagor', '3107230');
 
 --
 -- Индексы сохранённых таблиц
@@ -119,7 +143,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT для таблицы `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT для таблицы `result`
@@ -131,13 +155,30 @@ ALTER TABLE `result`
 -- AUTO_INCREMENT для таблицы `subject`
 --
 ALTER TABLE `subject`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Ограничения внешнего ключа сохраненных таблиц
+--
+
+--
+-- Ограничения внешнего ключа таблицы `questions`
+--
+ALTER TABLE `questions`
+  ADD CONSTRAINT `questions_ibfk_1` FOREIGN KEY (`subject_id`) REFERENCES `subject` (`id`);
+
+--
+-- Ограничения внешнего ключа таблицы `result`
+--
+ALTER TABLE `result`
+  ADD CONSTRAINT `result_ibfk_1` FOREIGN KEY (`subject_id`) REFERENCES `subject` (`id`),
+  ADD CONSTRAINT `result_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
