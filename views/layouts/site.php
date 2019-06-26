@@ -26,20 +26,20 @@ SiteAsset::register($this);
 
         <!-- Styleswitcher
 ================================================== -->
-        <div class="colors-switcher">
-            <a id="show-panel" class="hide-panel"><i class="fa fa-tint"></i></a>
-            <ul class="colors-list">
-                <li><a title="Light Red" onClick="setActiveStyleSheet('light-red'); return false;" class="light-red"></a></li>
-                <li><a title="Blue" class="blue" onClick="setActiveStyleSheet('blue'); return false;"></a></li>
-                <li class="no-margin"><a title="Light Blue" onClick="setActiveStyleSheet('light-blue'); return false;" class="light-blue"></a></li>
-                <li><a title="Green" class="green" onClick="setActiveStyleSheet('green'); return false;"></a></li>
-
-                <li class="no-margin"><a title="light-green" class="light-green" onClick="setActiveStyleSheet('light-green'); return false;"></a></li>
-                <li><a title="Yellow" class="yellow" onClick="setActiveStyleSheet('yellow'); return false;"></a></li>
-
-            </ul>
-
-        </div>
+<!--        <div class="colors-switcher">-->
+<!--            <a id="show-panel" class="hide-panel"><i class="fa fa-tint"></i></a>-->
+<!--            <ul class="colors-list">-->
+<!--                <li><a title="Light Red" onClick="setActiveStyleSheet('light-red'); return false;" class="light-red"></a></li>-->
+<!--                <li><a title="Blue" class="blue" onClick="setActiveStyleSheet('blue'); return false;"></a></li>-->
+<!--                <li class="no-margin"><a title="Light Blue" onClick="setActiveStyleSheet('light-blue'); return false;" class="light-blue"></a></li>-->
+<!--                <li><a title="Green" class="green" onClick="setActiveStyleSheet('green'); return false;"></a></li>-->
+<!---->
+<!--                <li class="no-margin"><a title="light-green" class="light-green" onClick="setActiveStyleSheet('light-green'); return false;"></a></li>-->
+<!--                <li><a title="Yellow" class="yellow" onClick="setActiveStyleSheet('yellow'); return false;"></a></li>-->
+<!---->
+<!--            </ul>-->
+<!---->
+<!--        </div>-->
         <!-- Styleswitcher End
 
                 <!-- Navigation -->
@@ -98,7 +98,7 @@ SiteAsset::register($this);
             </div>
             <!-- /.container-fluid -->
         </nav>
-
+<br><br><br>
         <!-- CONTENT BEGIN -->
     <div style="min-height: 450px">
         <?php echo $content; ?>
