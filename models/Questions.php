@@ -55,4 +55,9 @@ class Questions extends \yii\db\ActiveRecord
             'subject_id' => 'Subject ID',
         ];
     }
+
+    public function getSubject(){
+        return $this->hasOne(Subject::className(),['id'=>'subject_id']);
+    }
+
 }

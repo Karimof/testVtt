@@ -52,4 +52,13 @@ class Result extends \yii\db\ActiveRecord
             'id' => 'ID',
         ];
     }
+
+    public function getSubjects(){
+        return $this->hasOne(Subject::className(),['id'=>'subject_id']);
+    }
+
+    public function getUsers(){
+        return $this->hasOne(Users::className(),['id'=>'user_id']);
+    }
+
 }
