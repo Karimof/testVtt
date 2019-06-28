@@ -1,6 +1,7 @@
 <?php
 use app\assets\SiteAsset;
 use yii\helpers\Html;
+use \yii\bootstrap\Nav;
 SiteAsset::register($this);
 ?>
 <?php $this->beginPage(); ?>
@@ -23,84 +24,58 @@ SiteAsset::register($this);
     </head>
     <body class="index">
         <?php $this->beginBody() ?>
-
-        <!-- Styleswitcher
-================================================== -->
-<!--        <div class="colors-switcher">-->
-<!--            <a id="show-panel" class="hide-panel"><i class="fa fa-tint"></i></a>-->
-<!--            <ul class="colors-list">-->
-<!--                <li><a title="Light Red" onClick="setActiveStyleSheet('light-red'); return false;" class="light-red"></a></li>-->
-<!--                <li><a title="Blue" class="blue" onClick="setActiveStyleSheet('blue'); return false;"></a></li>-->
-<!--                <li class="no-margin"><a title="Light Blue" onClick="setActiveStyleSheet('light-blue'); return false;" class="light-blue"></a></li>-->
-<!--                <li><a title="Green" class="green" onClick="setActiveStyleSheet('green'); return false;"></a></li>-->
-<!---->
-<!--                <li class="no-margin"><a title="light-green" class="light-green" onClick="setActiveStyleSheet('light-green'); return false;"></a></li>-->
-<!--                <li><a title="Yellow" class="yellow" onClick="setActiveStyleSheet('yellow'); return false;"></a></li>-->
-<!---->
-<!--            </ul>-->
-<!---->
-<!--        </div>-->
-        <!-- Styleswitcher End
-
-                <!-- Navigation -->
+        <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgba(0,0,0, 0.95); max-height: 80px">
             <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">Fame</a>
-                </div>
+                <?= Nav::widget([
+                    'options' => ['class' => 'navbar-nav navbar-right'],
+                    'items' => [
+                        ['label' => Yii::t('app','Home'), 'url' => ['/site/index']],
+//                        ['label' => Yii::t('app','News'),'url' => ['/site/news'],
+//                            'visible' => !Yii::$app->user->isGuest
+//                        ],
+//                        ['label' => Yii::t('app','Products'), 'url' => ['/site/products']],
+//                        ['label' => Yii::t('app','Gallery'), 'url' => ['/site/gallery']],
+                        //['label' => Yii::t('app','Pagination'), 'url' => ['/site/pagination']],
+                        ['label' => Yii::t('app','Contact'), 'url' => ['/site/contact']],
+//                        ['label' => Yii::t('app','About'), 'url' => ['/site/about']],
+                        '<form class="navbar-form navbar-left" action="/site/search" method="get">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="key" value="" placeholder='. Yii::t('app','Search') . ' required>
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>',
+                        Yii::$app->user->isGuest ? (
+                        ['label' => Yii::t('app','Login'), 'url' => ['/site/login']]
+                        ) : (
+                            '<li>'
+                            . Html::beginForm(['/site/logout'], 'post')
+                            . Html::submitButton(
+                                Yii::t('app','Logout') . ' (' . Yii::$app->user->identity->username . ')',
+                                ['class' => 'btn btn-link logout']
+                            )
+                            . Html::endForm()
+                            . '</li>'
+                        )
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#feature">Feature</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#about-us">About</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#service">Services</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#team">Team</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#pricing">Pricing</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#latest-news">Latest News</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#testimonial">Testimonials</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#partner">Partner</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+
+
+                    ],
+
+                ])
+                ; ?>
+
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container-fluid -->
         </nav>
-<br><br><br>
+<br><br><br><br>
         <!-- CONTENT BEGIN -->
-    <div style="min-height: 450px">
+    <div style="">
         <?php echo $content; ?>
     </div>
         <!-- CONTENT END -->
@@ -146,3 +121,22 @@ SiteAsset::register($this);
     </body>
     </html>
 <?php $this->endPage(); ?>
+
+<!--bu shilasa ung yuqorida turadi-->
+<!-- Styleswitcher
+================================================== -->
+<!--        <div class="colors-switcher">-->
+<!--            <a id="show-panel" class="hide-panel"><i class="fa fa-tint"></i></a>-->
+<!--            <ul class="colors-list">-->
+<!--                <li><a title="Light Red" onClick="setActiveStyleSheet('light-red'); return false;" class="light-red"></a></li>-->
+<!--                <li><a title="Blue" class="blue" onClick="setActiveStyleSheet('blue'); return false;"></a></li>-->
+<!--                <li class="no-margin"><a title="Light Blue" onClick="setActiveStyleSheet('light-blue'); return false;" class="light-blue"></a></li>-->
+<!--                <li><a title="Green" class="green" onClick="setActiveStyleSheet('green'); return false;"></a></li>-->
+<!---->
+<!--                <li class="no-margin"><a title="light-green" class="light-green" onClick="setActiveStyleSheet('light-green'); return false;"></a></li>-->
+<!--                <li><a title="Yellow" class="yellow" onClick="setActiveStyleSheet('yellow'); return false;"></a></li>-->
+<!---->
+<!--            </ul>-->
+<!---->
+<!--        </div>-->
+<!-- Styleswitcher End

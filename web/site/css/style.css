@@ -1364,7 +1364,7 @@ and (min-width : 551px){
     background-attachment: fixed;
     background-repeat: no-repeat;
     padding-top: 80px;
-    //padding-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .contact .btn-primary {
@@ -1394,7 +1394,7 @@ and (min-width : 551px){
 }
 
 .contact .form-group input.form-control {
-    height: auto;
+    /*height: auto;*/
 }
 
 .contact .form-group textarea.form-control {
@@ -1466,7 +1466,7 @@ and (min-width : 551px){
 /*-------------------------------------------------------*/
 
 footer.style-1 {
-    margin-top: 100px;
+    margin-top: 0px;
     padding: 25px 0;
     background: rgba(0, 0, 0, 0.8);
 }

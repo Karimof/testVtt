@@ -20,7 +20,7 @@ $this->title = 'My Yii Application';
         <!-- Carousel inner -->
         <div class="carousel-inner">
             <div class="item active">
-                <img class="img-responsive" src="/web/site/images/header-bg-1.jpg" alt="slider">
+                <img class="img-responsive" src="/site/images/header-bg-1.jpg" alt="slider">
                 <div class="slider-content">
                     <div class="col-md-12 text-center">
                         <h1 class="animated3">
@@ -34,7 +34,7 @@ $this->title = 'My Yii Application';
             <!--/ Carousel item end -->
 
             <div class="item">
-                <img class="img-responsive" src="/web/site/images/header-back.png" alt="slider">
+                <img class="img-responsive" src="/site/images/header-back.png" alt="slider">
 
                 <div class="slider-content">
                     <div class="col-md-12 text-center">
@@ -49,7 +49,7 @@ $this->title = 'My Yii Application';
             <!--/ Carousel item end -->
 
             <div class="item">
-                <img class="img-responsive" src="/web/site/images/galaxy.jpg" alt="slider">
+                <img class="img-responsive" src="/site/images/galaxy.jpg" alt="slider">
                 <div class="slider-content">
                     <div class="col-md-12 text-center">
                         <h1 class="animated2">
@@ -93,7 +93,7 @@ $this->title = 'My Yii Application';
             <div class="latest-news">
                 <div class="col-md-12">
                     <div class="latest-post">
-                        <img src="/web/site/images/about-01.jpg" class="img-responsive" alt="">
+                        <img src="/site/images/about-01.jpg" class="img-responsive" alt="">
                         <h4><a href="#">Standard Post with Image</a></h4>
                         <div class="post-details">
                             <span class="date"><strong>31</strong> <br>Dec , 2014</span>
@@ -105,7 +105,7 @@ $this->title = 'My Yii Application';
                 </div>
                 <div class="col-md-12">
                     <div class="latest-post">
-                        <img src="/web/site/images/about-02.jpg" class="img-responsive" alt="">
+                        <img src="/site/images/about-02.jpg" class="img-responsive" alt="">
                         <h4><a href="#">Standard Post with Image</a></h4>
                         <div class="post-details">
                             <span class="date"><strong>17</strong> <br>Feb , 2014</span>
@@ -117,7 +117,7 @@ $this->title = 'My Yii Application';
                 </div>
                 <div class="col-md-12">
                     <div class="latest-post">
-                        <img src="/web/site/images/about-03.jpg" class="img-responsive" alt="">
+                        <img src="/site/images/about-03.jpg" class="img-responsive" alt="">
                         <h4><a href="#">Standard Post with Image</a></h4>
                         <div class="post-details">
                             <span class="date"><strong>08</strong> <br>Aug , 2014</span>
@@ -129,7 +129,7 @@ $this->title = 'My Yii Application';
                 </div>
                 <div class="col-md-12">
                     <div class="latest-post">
-                        <img src="/web/site/images/about-01.jpg" class="img-responsive" alt="">
+                        <img src="/site/images/about-01.jpg" class="img-responsive" alt="">
                         <h4><a href="#">Standard Post with Image</a></h4>
                         <div class="post-details">
                             <span class="date"><strong>08</strong> <br>Aug , 2014</span>
@@ -141,7 +141,7 @@ $this->title = 'My Yii Application';
                 </div>
                 <div class="col-md-12">
                     <div class="latest-post">
-                        <img src="/web/site/images/about-02.jpg" class="img-responsive" alt="">
+                        <img src="/site/images/about-02.jpg" class="img-responsive" alt="">
                         <h4><a href="#">Standard Post with Image</a></h4>
                         <div class="post-details">
                             <span class="date"><strong>08</strong> <br>Aug , 2014</span>
@@ -153,7 +153,7 @@ $this->title = 'My Yii Application';
                 </div>
                 <div class="col-md-12">
                     <div class="latest-post">
-                        <img src="/web/site/images/about-03.jpg" class="img-responsive" alt="">
+                        <img src="/site/images/about-03.jpg" class="img-responsive" alt="">
                         <h4><a href="#">Standard Post with Image</a></h4>
                         <div class="post-details">
                             <span class="date"><strong>08</strong> <br>Aug , 2014</span>
