@@ -27,6 +27,7 @@ SiteAsset::register($this);
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgba(0,0,0, 0.95); max-height: 80px">
             <div class="container">
+                <a class="navbar-brand page-scroll" href="/site/index">Fame</a>
                 <?= Nav::widget([
                     'options' => ['class' => 'navbar-nav navbar-right'],
                     'items' => [
