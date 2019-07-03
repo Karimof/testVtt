@@ -29,7 +29,7 @@ class AppAsset extends AssetBundle
 
     ];
     public $js = [
-        'js/jquery.min.js',
+//        'js/jquery.min.js',
         'js/nprogress.js',
         'js/gauge/gauge.min.js',
         'js/gauge/gauge_demo.js',
