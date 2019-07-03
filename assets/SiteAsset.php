@@ -9,7 +9,7 @@ class SiteAsset extends AssetBundle {
     public $baseUrl = '@web/site';
     public $css = [
         'css/animate.css',
-        'css/bootstrap.min.css',
+//        'css/bootstrap.min.css',
         'css/font-awesome.min.css',
         'css/owl.carousel.css',
         'css/owl.theme.css',
@@ -30,8 +30,8 @@ class SiteAsset extends AssetBundle {
     public $js = [
 //        'js/modernizr.custom.js',
         'js/npm.js',
-        'js/jquery-2.1.1.min.js',
-        'js/bootstrap.min.js',
+//        'js/jquery-2.1.1.min.js',
+//        'js/bootstrap.min.js',
         'js/jquery.easing.1.3.js',
         'js/classie.js',
         'js/count-to.js',

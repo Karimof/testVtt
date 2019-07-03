@@ -77,5 +77,169 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP" type="php">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/behat/gherkin" />
+          <root url="file://$MODULE_DIR$/vendor/bower-asset/bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/bower-asset/inputmask" />
+          <root url="file://$MODULE_DIR$/vendor/bower-asset/jquery" />
+          <root url="file://$MODULE_DIR$/vendor/bower-asset/punycode" />
+          <root url="file://$MODULE_DIR$/vendor/bower-asset/yii2-pjax" />
+          <root url="file://$MODULE_DIR$/vendor/cebe/markdown" />
+          <root url="file://$MODULE_DIR$/vendor/codeception/base" />
+          <root url="file://$MODULE_DIR$/vendor/codeception/specify" />
+          <root url="file://$MODULE_DIR$/vendor/codeception/stub" />
+          <root url="file://$MODULE_DIR$/vendor/codeception/verify" />
+          <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
+          <root url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
+          <root url="file://$MODULE_DIR$/vendor/ezyang/htmlpurifier" />
+          <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/vendor/imagine/imagine" />
+          <root url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
+          <root url="file://$MODULE_DIR$/vendor/phar-io/manifest" />
+          <root url="file://$MODULE_DIR$/vendor/phar-io/version" />
+          <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
+          <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
+          <root url="file://$MODULE_DIR$/vendor/phpdocumentor/type-resolver" />
+          <root url="file://$MODULE_DIR$/vendor/phpspec/php-diff" />
+          <root url="file://$MODULE_DIR$/vendor/phpspec/prophecy" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/php-code-coverage" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/php-file-iterator" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/php-text-template" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/php-timer" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
+          <root url="file://$MODULE_DIR$/vendor/psr/http-message" />
+          <root url="file://$MODULE_DIR$/vendor/ralouphie/getallheaders" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/diff" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/environment" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/exporter" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/global-state" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/object-enumerator" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/object-reflector" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/recursion-context" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/resource-operations" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/version" />
+          <root url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/browser-kit" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/console" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/contracts" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/css-selector" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/dom-crawler" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/event-dispatcher" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/finder" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-iconv" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-idn" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-php72" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
+          <root url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
+          <root url="file://$MODULE_DIR$/vendor/vova07/yii2-imperavi-widget" />
+          <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-composer" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-debug" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-faker" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-gii" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-imagine" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-swiftmailer" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/behat/gherkin" />
+          <root url="file://$MODULE_DIR$/vendor/bower-asset/bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/bower-asset/inputmask" />
+          <root url="file://$MODULE_DIR$/vendor/bower-asset/jquery" />
+          <root url="file://$MODULE_DIR$/vendor/bower-asset/punycode" />
+          <root url="file://$MODULE_DIR$/vendor/bower-asset/yii2-pjax" />
+          <root url="file://$MODULE_DIR$/vendor/cebe/markdown" />
+          <root url="file://$MODULE_DIR$/vendor/codeception/base" />
+          <root url="file://$MODULE_DIR$/vendor/codeception/specify" />
+          <root url="file://$MODULE_DIR$/vendor/codeception/stub" />
+          <root url="file://$MODULE_DIR$/vendor/codeception/verify" />
+          <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
+          <root url="file://$MODULE_DIR$/vendor/egulias/email-validator" />
+          <root url="file://$MODULE_DIR$/vendor/ezyang/htmlpurifier" />
+          <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/vendor/imagine/imagine" />
+          <root url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
+          <root url="file://$MODULE_DIR$/vendor/phar-io/manifest" />
+          <root url="file://$MODULE_DIR$/vendor/phar-io/version" />
+          <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
+          <root url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
+          <root url="file://$MODULE_DIR$/vendor/phpdocumentor/type-resolver" />
+          <root url="file://$MODULE_DIR$/vendor/phpspec/php-diff" />
+          <root url="file://$MODULE_DIR$/vendor/phpspec/prophecy" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/php-code-coverage" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/php-file-iterator" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/php-text-template" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/php-timer" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
+          <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
+          <root url="file://$MODULE_DIR$/vendor/psr/http-message" />
+          <root url="file://$MODULE_DIR$/vendor/ralouphie/getallheaders" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/diff" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/environment" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/exporter" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/global-state" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/object-enumerator" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/object-reflector" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/recursion-context" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/resource-operations" />
+          <root url="file://$MODULE_DIR$/vendor/sebastian/version" />
+          <root url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/browser-kit" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/console" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/contracts" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/css-selector" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/dom-crawler" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/event-dispatcher" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/finder" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-iconv" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-idn" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-php72" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
+          <root url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
+          <root url="file://$MODULE_DIR$/vendor/vova07/yii2-imperavi-widget" />
+          <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-composer" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-debug" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-faker" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-gii" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-imagine" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-swiftmailer" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
