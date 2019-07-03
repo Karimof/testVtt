@@ -29,9 +29,16 @@ class SiteAsset extends AssetBundle {
 
     public $js = [
 //        'js/modernizr.custom.js',
-        'js/npm.js',
+          'js/npm.js',
 //        'js/jquery-2.1.1.min.js',
 //        'js/bootstrap.min.js',
+
+    //timer
+//        'js/timer/example/dojo.js',
+//        'js/timer/example/jquery.simple.timer.js',
+    ///timer
+       // 'js/jquery-2.1.1.min.js',
+        //'js/bootstrap.min.js',
         'js/jquery.easing.1.3.js',
         'js/classie.js',
         'js/count-to.js',
