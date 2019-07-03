@@ -49,7 +49,7 @@ class SiteAsset extends AssetBundle {
         'js/styleswitcher.js',
         'js/jqBootstrapValidation.js',
         'js/owl.carousel.min.js',
-        'js/contact_me.js',
+        //'js/contact_me.js',
         'js/script.js',
 //        'js/wow.min.js',
     ];

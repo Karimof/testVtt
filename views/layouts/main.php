@@ -60,9 +60,9 @@ AppAsset::register($this);
                     <div class="menu_section">
                         <h3>Admin</h3>
                         <ul class="nav side-menu">
-                            <li><a href="<?=Yii::$app->urlManager->createUrl(['questions/index'])?>"><i class="fa fa-edit"></i> Savollar</a></li>
-                            <li><a href="<?=Yii::$app->urlManager->createUrl(['subject/index'])?>"><i class="fa fa-book"></i> Fanlar </a></li>
-                            <li><a href="<?=Yii::$app->urlManager->createUrl(['users/index'])?>"><i class="fa fa-desktop"></i> Foydalanuvchilar </a></li>
+                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/questions/index'])?>"><i class="fa fa-edit"></i> Savollar</a></li>
+                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/subject/index'])?>"><i class="fa fa-book"></i> Fanlar </a></li>
+                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/users/index'])?>"><i class="fa fa-desktop"></i> Foydalanuvchilar </a></li>
                         </ul>
                     </div>
 
