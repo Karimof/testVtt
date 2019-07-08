@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\UsersSearch */
+/* @var $searchModel app\models\UserSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Foydalanuvchilar';
@@ -26,12 +26,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            //'id',
             'fio',
             'image',
             'username',
             'password',
-
+            'role',
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

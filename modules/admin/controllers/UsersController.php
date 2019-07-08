@@ -3,11 +3,12 @@
 namespace app\modules\admin\controllers;
 
 use Yii;
-use app\models\Users;
-use app\models\UsersSearch;
+use app\models\User;
+use app\models\UserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * UsersController implements the CRUD actions for Users model.
@@ -20,22 +21,34 @@ class UsersController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                        'matchCallback' => function ($rule, $action) {
+                            return User::isUserAdmin(Yii::$app->user->identity->username);
+                        }
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST'],
+                    'logout' => ['post'],
                 ],
             ],
         ];
     }
 
     /**
-     * Lists all Users models.
+     * Lists all User models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new UsersSearch();
+        $searchModel = new UserSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -64,7 +77,7 @@ class UsersController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Users();
+        $model = new User();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -113,12 +126,12 @@ class UsersController extends Controller
      * Finds the Users model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Users the loaded model
+     * @return User the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Users::findOne($id)) !== null) {
+        if (($model = User::findOne($id)) !== null) {
             return $model;
         }
 
