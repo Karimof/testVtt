@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Users */
+/* @var $model app\models\User */
 
 $this->title = $model->fio;
 $this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];

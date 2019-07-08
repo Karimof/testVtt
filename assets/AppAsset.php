@@ -20,7 +20,7 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web/adminStyle';
     public $css = [
-        'css/site.css',
+        //'css/site.css',
         'fonts/css/font-awesome.min.css',
         'css/animate.min.css',
         'css/custom.css',
@@ -40,7 +40,7 @@ class AppAsset extends AssetBundle
         'js/moment.min.js',
         'js/datepicker/daterangepicker.js',
         'js/custom.js',
-        'js/excanvas.min.js',
+        //'js/excanvas.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

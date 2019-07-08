@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Users */
+/* @var $model app\models\User */
 
 $this->title = 'Foydalanuvchini O`zgartirish: ' . $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];

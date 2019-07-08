@@ -38,18 +38,19 @@ AppAsset::register($this);
             <div class="left_col scroll-view">
 
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="<?=Yii::$app->homeUrl?>" class="site_title"><i class="fa fa-paw"></i> <span>Ilxom.uz</span></a>
+                    <a href="<?=Yii::$app->urlManager->createUrl('admin/questions/index')?>"
+                       class="site_title"><i class="fa fa-paw"></i> <span>TestLider.uz</span></a>
                 </div>
                 <div class="clearfix"></div>
 
                 <!-- menu prile quick info -->
                 <div class="profile">
                     <div class="profile_pic">
-                        <img style="right: 100px; left: 100px; border-radius: 50%" src="adminStyle/images/img.jpg" alt="..." class="img-circle profile_img">
+                        <img style="right: 200px; left: 500px; border-radius: 40%" src="/uploads/<?=Yii::$app->user->identity->image;?>" alt="..." class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
                         <span>Xush Kelibsiz!!!</span>
-                        <h2>Bobojonov Muxtorjon</h2>
+                        <h2><?=Yii::$app->user->identity->username;?></h2>
                     </div>
                 </div>
                 <!-- /menu prile quick info -->
@@ -58,11 +59,13 @@ AppAsset::register($this);
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
                     <div class="menu_section">
+                        <?php if(Yii::$app->user->identity->role == 1):?>
                         <h3>Admin</h3>
+                        <?php endif;?>
                         <ul class="nav side-menu">
-                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/questions/index'])?>"><i class="fa fa-edit"></i> Savollar</a></li>
-                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/subject/index'])?>"><i class="fa fa-book"></i> Fanlar </a></li>
-                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/users/index'])?>"><i class="fa fa-desktop"></i> Foydalanuvchilar </a></li>
+                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/questions/'])?>"><i class="fa fa-edit"></i> Savollar</a></li>
+                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/subject/'])?>"><i class="fa fa-book"></i> Fanlar </a></li>
+                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/users/'])?>"><i class="fa fa-desktop"></i> Foydalanuvchilar </a></li>
                         </ul>
                     </div>
 
@@ -99,35 +102,9 @@ AppAsset::register($this);
                     </div>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="">
-                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="images/img.jpg" alt="">John Doe
-                                <span class=" fa fa-angle-down"></span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
-                                <li><a href="javascript:;">  Profile</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span class="badge bg-red pull-right">50%</span>
-                                        <span>Settings</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">Help</a>
-                                </li>
-                                <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
-                                </li>
-                            </ul>
-                        </li>
 
-                        <li role="presentation" class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-envelope-o"></i>
-                                <span class="badge bg-green"></span>
-                            </a>
 
-                        </li>
+                        <li>setting</li>
 
                     </ul>
                 </nav>

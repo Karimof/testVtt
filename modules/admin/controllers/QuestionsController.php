@@ -8,6 +8,8 @@ use app\models\QuestionsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
+use app\models\User;
 
 /**
  * QuestionsController implements the CRUD actions for Questions model.
@@ -20,10 +22,22 @@ class QuestionsController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                        'matchCallback' => function ($rule, $action) {
+                            return User::isUserAdmin(Yii::$app->user->identity->username);
+                        }
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST'],
+                    'logout' => ['post'],
                 ],
             ],
         ];

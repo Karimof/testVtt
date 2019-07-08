@@ -29,7 +29,7 @@ class SiteAsset extends AssetBundle {
 
     public $js = [
 //        'js/modernizr.custom.js',
-          'js/npm.js',
+//          'js/npm.js',
 //        'js/jquery-2.1.1.min.js',
 //        'js/bootstrap.min.js',
 
