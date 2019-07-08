@@ -1,18 +1,18 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
 use Yii;
-use app\models\Result;
-use app\models\ResultSearch;
+use app\models\Questions;
+use app\models\QuestionsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ResultController implements the CRUD actions for Result model.
+ * QuestionsController implements the CRUD actions for Questions model.
  */
-class ResultController extends Controller
+class QuestionsController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,12 +30,12 @@ class ResultController extends Controller
     }
 
     /**
-     * Lists all Result models.
+     * Lists all Questions models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new ResultSearch();
+        $searchModel = new QuestionsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class ResultController extends Controller
     }
 
     /**
-     * Displays a single Result model.
+     * Displays a single Questions model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,13 +58,13 @@ class ResultController extends Controller
     }
 
     /**
-     * Creates a new Result model.
+     * Creates a new Questions model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Result();
+        $model = new Questions();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -76,7 +76,7 @@ class ResultController extends Controller
     }
 
     /**
-     * Updates an existing Result model.
+     * Updates an existing Questions model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +96,7 @@ class ResultController extends Controller
     }
 
     /**
-     * Deletes an existing Result model.
+     * Deletes an existing Questions model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +110,15 @@ class ResultController extends Controller
     }
 
     /**
-     * Finds the Result model based on its primary key value.
+     * Finds the Questions model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Result the loaded model
+     * @return Questions the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Result::findOne($id)) !== null) {
+        if (($model = Questions::findOne($id)) !== null) {
             return $model;
         }
 

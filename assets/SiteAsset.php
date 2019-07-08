@@ -9,7 +9,7 @@ class SiteAsset extends AssetBundle {
     public $baseUrl = '@web/site';
     public $css = [
         'css/animate.css',
-        'css/bootstrap.min.css',
+//        'css/bootstrap.min.css',
         'css/font-awesome.min.css',
         'css/owl.carousel.css',
         'css/owl.theme.css',
@@ -29,12 +29,16 @@ class SiteAsset extends AssetBundle {
 
     public $js = [
 //        'js/modernizr.custom.js',
+          'js/npm.js',
+//        'js/jquery-2.1.1.min.js',
+//        'js/bootstrap.min.js',
+
     //timer
 //        'js/timer/example/dojo.js',
 //        'js/timer/example/jquery.simple.timer.js',
     ///timer
-        'js/jquery-2.1.1.min.js',
-        'js/bootstrap.min.js',
+       // 'js/jquery-2.1.1.min.js',
+        //'js/bootstrap.min.js',
         'js/jquery.easing.1.3.js',
         'js/classie.js',
         'js/count-to.js',
@@ -45,7 +49,7 @@ class SiteAsset extends AssetBundle {
         'js/styleswitcher.js',
         'js/jqBootstrapValidation.js',
         'js/owl.carousel.min.js',
-        'js/contact_me.js',
+        //'js/contact_me.js',
         'js/script.js',
 //        'js/wow.min.js',
     ];

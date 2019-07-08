@@ -13,8 +13,8 @@ use yii\base\Model;
  */
 class LoginForm extends Model
 {
-    public $username;
-    public $password;
+    public $username='admin';
+    public $password='admin';
     public $rememberMe = true;
 
     private $_user = false;
