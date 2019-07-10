@@ -65,6 +65,27 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+
+
+    /** registration page
+     *
+     *
+     */
+    public function actionRegistration()
+    {
+        return $this->render('registration');
+    }
+
+    /** upload_registration page
+     *
+     *
+     */
+    public function actionUpload_registration()
+    {
+        return $this->redirect('index');
+    }
+
+
     /**
      * Login action.
      *

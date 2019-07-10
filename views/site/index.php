@@ -34,12 +34,12 @@ $this->title = 'My Yii Application';
             <!--/ Carousel item end -->
 
             <div class="item">
-                <img class="img-responsive" src="/site/images/header-back.png" alt="slider">
+                <img class="img-responsive" src="/site/images/education-hero.jpg" alt="slider">
 
                 <div class="slider-content">
                     <div class="col-md-12 text-center">
                         <h1 class="animated1">
-                            <span>Welcome to <strong>Fame</strong></span>
+                            <span><strong>Welcome</strong> to Fame</span>
                         </h1>
                         <p class="animated2">Generate a flood of new business with the<br> power of a digital media platform</p>
                         <a href="#feature" class="page-scroll btn btn-primary animated3">Read More</a>
@@ -56,7 +56,8 @@ $this->title = 'My Yii Application';
                             <span>The way of <strong>Success</strong></span>
                         </h1>
                         <p class="animated1">At vero eos et accusamus et iusto odio dignissimos<br> ducimus qui blanditiis praesentium voluptatum</p>
-                        <a class="animated3 slider btn btn-primary btn-min-block" href="#">Get Now</a><a class="animated3 slider btn btn-default btn-min-block" href="#">Live Demo</a>
+                        <a class="animated3 slider btn btn-primary btn-min-block" href="#">Get Now</a>
+                        <a class="animated3 slider btn btn-default btn-min-block" href="#">Live Demo</a>
 
                     </div>
                 </div>

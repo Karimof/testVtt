@@ -502,7 +502,7 @@ li {
 }
 
 #main-slide .slider-content{
-	top: 45%;
+	top: 30%;
 	margin-top: -70px;
 	left: 0;
 	padding: 0;
@@ -514,7 +514,7 @@ li {
 }
 
 #main-slide .carousel-indicators {
-	bottom: 30px;
+	bottom: 140px;
 }
 
 .carousel-indicators li{
