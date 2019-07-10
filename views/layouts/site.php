@@ -35,11 +35,9 @@ SiteAsset::register($this);
         //                        ['label' => Yii::t('app','News'),'url' => ['/site/news'],
         //                            'visible' => !Yii::$app->user->isGuest
         //                        ],
-        //                        ['label' => Yii::t('app','Products'), 'url' => ['/site/products']],
-        //                        ['label' => Yii::t('app','Gallery'), 'url' => ['/site/gallery']],
-                                //['label' => Yii::t('app','Pagination'), 'url' => ['/site/pagination']],
                                 ['label' => Yii::t('app','Contact'), 'url' => ['/site/contact']],
                                 ['label' => Yii::t('app','About'), 'url' => ['/site/about']],
+
                                 '<form class="navbar-form navbar-left" action="/site/search" method="get">
                                     <div class="input-group">
                                         <input type="text" class="form-control" name="key" value="" placeholder='. Yii::t('app','Search') . ' required>
@@ -50,6 +48,7 @@ SiteAsset::register($this);
                                         </div>
                                     </div>
                                 </form>',
+                                ['label' => Yii::t('app','Registration'),'url' => ['/site/registration']],
                                 Yii::$app->user->isGuest ? (
                                 ['label' => Yii::t('app','Login'), 'url' => ['/site/login']]
                                 ) : (
