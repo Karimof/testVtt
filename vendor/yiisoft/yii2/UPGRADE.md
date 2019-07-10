@@ -51,6 +51,45 @@ if you want to upgrade from version A to version C and there is
 version B between A and C, you need to follow the instructions
 for both A and B.
 
+Upgrade from Yii 2.0.20
+-----------------------
+
+* `yii\db\Query::select()` and `addSelect()` now normalize the format that columns are stored in when saving them 
+  to `$this->select`, so code that works directly with that property may need to be modified.
+  
+  For the following code:
+  
+  ```php
+  $a = $query->select('*');
+  $b = $query->select('id, name');
+  ```
+  
+  The value was stored as is i.e.
+  
+  ```php
+  // a
+  ['*']
+  
+  // b
+  ['id', 'name']
+  ``` 
+  
+  Now it is stored as
+  
+  ```php
+  // a
+  ['*' => '*']
+  
+  // b
+  ['id' => 'id', 'name' => 'name']
+  ```
+
+Upgrade from Yii 2.0.16
+-----------------------
+
+* In case you have extended the `yii\web\DbSession` class you should check if your 
+  custom implementation is compatible with the new `yii\web\DbSession::$fields` attribute.
+  Especially when overriding the `yii\web\DbSession::writeSession($id, $data)` function.
 
 Upgrade from Yii 2.0.15
 -----------------------
