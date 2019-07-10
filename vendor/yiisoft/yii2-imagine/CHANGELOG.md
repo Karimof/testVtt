@@ -1,6 +1,12 @@
 Yii Framework 2 imagine extension Change Log
 ================================================
 
+2.2.0 June 04, 2019
+-------------------
+
+- Enh #54: Updated imagine/imagine version constraint to allow using 1.1.0 (samdark)
+
+
 2.1.1 February 22, 2018
 -----------------------
 

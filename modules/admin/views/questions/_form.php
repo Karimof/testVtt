@@ -12,6 +12,14 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
+
+    <div class="form-group bmd-form-group">
+        <?= $form->field($model, 'subject_id')->
+        dropDownList(\yii\helpers\ArrayHelper::map(\app\models\Subject::find()->all(),'id','name'),
+            ['class'=>'form-control','id'=>'directionInQuestion'])
+            ->label('Fanni tanlang') ?>
+    </div>
+
     <?= $form->field($model, 'question')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'answerA')->textInput(['maxlength' => true]) ?>
@@ -22,9 +30,16 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'answerD')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'trueAnswer')->textInput() ?>
+    <div class="form-group bmd-form-group ">
+        <?=$form->field($model,'trueAnswer')->radioList([
+            '1'=>'A javob',
+            '2'=>'B javob',
+            '3'=>'C javob',
+            '4'=>'D javob'
+        ],['class'=>'','style'=>'color: #000','required'=>'required'])?>
+    </div>
 
-    <?= $form->field($model, 'subject_id')->textInput() ?>
+
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-primary']) ?>

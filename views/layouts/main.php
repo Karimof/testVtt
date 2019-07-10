@@ -64,8 +64,11 @@ AppAsset::register($this);
                         <?php endif;?>
                         <ul class="nav side-menu">
                             <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/questions/'])?>"><i class="fa fa-edit"></i> Savollar</a></li>
-                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/subject/'])?>"><i class="fa fa-book"></i> Fanlar </a></li>
+                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/subject/'])?>"><i class="fa fa-bookmark-o"></i> Fanlar </a></li>
                             <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/users/'])?>"><i class="fa fa-desktop"></i> Foydalanuvchilar </a></li>
+                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/teachers/'])?>"><i class="fa fa-male"></i> O`qituvchilar </a></li>
+                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/library/'])?>"><i class="fa fa-book"></i> Kutubxona </a></li>
+                            <li><a href="<?=Yii::$app->urlManager->createUrl(['admin/information/'])?>"><i class="fa fa-info-circle"></i> Yangiliklar </a></li>
                         </ul>
                     </div>
 
