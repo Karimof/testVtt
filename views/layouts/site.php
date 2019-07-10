@@ -25,7 +25,7 @@ SiteAsset::register($this);
         <body class="index">
             <?php $this->beginBody() ?>
                 <!-- Navigation -->
-                <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgba(0,0,0, 0.95); max-height: 80px">
+                <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgba(0, 0, 40, 0.9 ); max-height: 80px; padding-top: 15px">
                     <div class="container">
                         <a class="navbar-brand page-scroll" href="/site/index">Fame</a>
                         <?= Nav::widget([

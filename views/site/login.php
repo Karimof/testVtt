@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'labelOptions' => ['class' => 'col-lg-1 control-label'],
         ],
     ]); ?>
-        <div class="container" style="background-color: rgba(256,256,256,0.2); width:400px; text-align: center; padding-top: 30px; padding-bottom: 10px" >
+        <div class="container" style="margin-top: 50px; background-color: rgba(256,256,256,0.2); width:400px; text-align: center; padding-top: 30px; padding-bottom: 10px" >
 
             <img src="/site/images/user.png" style="width: 150px;">
 

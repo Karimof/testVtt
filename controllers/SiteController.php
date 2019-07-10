@@ -9,6 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\User;
 
 class SiteController extends Controller
 {
@@ -82,7 +83,24 @@ class SiteController extends Controller
      */
     public function actionUpload_registration()
     {
-        return $this->redirect('index');
+        $model = new User();
+        $request = Yii::$app->request;
+
+        $fullName = $request->get('fullName');
+        $login = $request->get('login');
+        $password = $request->get('password');
+
+        $model->fio = $fullName;
+        $model->username = $login;
+        $model->password = $password;
+        $model->role = 0;
+        $model->image = '/site/images/user.png';
+        $model->save();
+        
+        if($model->save())
+            return $this->redirect('index');
+
+        return $this->redirect('registration');
     }
 
 
@@ -98,14 +116,24 @@ class SiteController extends Controller
         }
 
         $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+        $model_user = new User();
+
+        if ($model->load(Yii::$app->request->post()) && $model->login() && $model_user->role == 1) {
             return $this->redirect('../admin/questions/index');
         }
-        $model->username = '';
-        $model->password = '';
-        return $this->render('login', [
-            'model' => $model,
-        ]);
+
+        else if($model->load(Yii::$app->request->post()) && $model->login() && $model_user->role == 0){
+            return $this->redirect('index');
+        }
+
+        else {
+            $model->username = '';
+            $model->password = '';
+            return $this->render('login', [
+                'model' => $model,
+            ]);
+        }
+
     }
 
     /**

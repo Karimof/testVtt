@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'TestLider.uz';
 ?>
 <!-- Start Home Page Slider -->
 <section id="page-top">

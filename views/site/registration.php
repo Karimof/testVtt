@@ -1,5 +1,7 @@
 <?php
     use yii\helpers\HTML;
+
+    $this->title='Registration';
 ?>
 
 <div class="site-login" style="background: url('/site/images/reg.jpg'); min-height: 700px; width: 100%" >
@@ -10,7 +12,7 @@
             <form action="upload_registration" method="get">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                    <input type="text" class="form-control" name="name" placeholder="Full Name" required value="">
+                    <input type="text" class="form-control" name="fullName" placeholder="Full Name" required value="">
                 </div><br>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -22,7 +24,7 @@
                 </div><br>
                 <div class="form-group" style="margin-left: -43.2px">
                     <div class="col-lg-offset-1 col-lg-11">
-                        <?= Html::submitButton('Registration', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                        <?= Html::submitButton('Registration', ['class' => 'btn btn-primary']) ?>
                     </div>
                 </div>
             </form>
